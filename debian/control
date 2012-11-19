@@ -1,0 +1,16 @@
+Source: ocproxy
+Maintainer: Kevin Cernekee <cernekee@gmail.com>
+Section: utils
+Priority: optional
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 8), libevent-dev (>= 2.0.0)
+Homepage: http://repo.or.cz/w/ocproxy.git
+
+Package: ocproxy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: SOCKS proxy for OpenConnect VPN
+ ocproxy is a user-level SOCKS and port forwarding proxy for OpenConnect
+ based on lwIP.  When using ocproxy, OpenConnect only handles network
+ activity that the user specifically asks to proxy, so the VPN interface
+ no longer "hijacks" all network traffic on the host.
